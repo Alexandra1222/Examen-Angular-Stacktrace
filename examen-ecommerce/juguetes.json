@@ -1,0 +1,100 @@
+{
+  "Juguetes": [
+    {
+        "id": 1,
+        "nombre": " Coleccionable Obi Wan Kenobi",
+        "categoría": "novedad",
+        "peliculas": [
+          "A New Hope",
+          "The Empire Strikes Back",
+          "Return of the Jedi",
+          "The Phantom Menace",
+          "Attack of the Clones",
+          "Revenge of the Sith"
+        ],
+        "PrecioUSD": 16,
+        "img":"https://www.tradeinn.com/f/13888/138888457/star-wars-figura-obi-wan-kenobi-episode-ii-vintage-collection-9.5-cm.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": " jueguete lego Biggs Darklighter",
+        "categoría": "novedad",
+        "peliculas": [
+            "A New Hope"
+        ],
+        "PrecioUSD": 12,
+        "img":"https://i.ebayimg.com/thumbs/images/g/kvkAAOSwfbFiRKMn/s-l300.jpg"
+      },
+    {
+        "id": 3,
+        "nombre": "R5-D4",
+        "categoría": "novedad",
+        "peliculas": [
+            "A New Hope"
+        ],
+        "PrecioUSD": 20,
+        "img":"https://http2.mlstatic.com/D_NQ_NP_640922-MLA40014983057_122019-O.webp"
+        },
+        {
+        "id": 4,
+        "nombre": "juguete Owen Lars",
+        "categoría": "novedad",
+        "peliculas": [
+            "A New Hope",
+            "Attack of the Clones",
+            "Revenge of the Sith"
+
+
+
+        ],
+        "PrecioUSD": 14,
+        "img":"https://http2.mlstatic.com/D_NQ_NP_984793-MLA32594735055_102019-O.jpg"
+        },
+    {
+        "id": 5,
+        "nombre": " coleccionable Leia Organa",
+        "categoría": "novedad",
+        "peliculas": [
+          "A New Hope",
+          "The Empire Strikes Back",
+          "Return of the Jedi",
+          "Revenge of the Sith"
+
+
+
+        ],
+        "PrecioUSD": 22,
+        "img":"https://www.tradeinn.com/f/13889/138891456/star-wars-figura-princess-leia-organa-15-cm.jpg"
+        },
+        {
+        "id": 6,
+        "nombre": " jueguete Darth Vader",
+        "categoría": "novedad",
+        "peliculas": [
+          "A New Hope",
+          "The Empire Strikes Back",
+          "Return of the Jedi",
+          "Revenge of the Sith"
+
+          ],
+        "PrecioUSD": 18,
+        "img":"https://http2.mlstatic.com/D_NQ_NP_846490-MLA52781290425_122022-O.webp"
+        },
+        {
+        "id": 7,
+        "nombre": "R2-D2",
+        "categoría": "novedad",
+        "peliculas": [  
+          "A New Hope",
+        "The Empire Strikes Back",
+        "Return of the Jedi",
+        "The Phantom Menace",
+        "Attack of the Clones",
+        "Revenge of the Sith"
+        ],
+        "PrecioUSD": 16,
+        "img":"https://www.tradeinn.com/f/13867/138673460/star-wars-figura-r2-d2-droids-vintage-vintage-10-cm.jpg"
+        }
+
+]
+}

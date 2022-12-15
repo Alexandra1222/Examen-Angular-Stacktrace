@@ -1,0 +1,62 @@
+<ng-container *ngIf="products.length != 0">
+    <div class="container">
+        <div class="card-table">
+            <br>
+            <h2>Resumen de Compra</h2>
+            <br>
+            <br>
+            <br>
+            <div clas="card-product">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>nombre</th>
+                           
+                            <th>precio</th>
+                            <th>Foto</th>
+                            <th>cantidad</th>
+                            <th>Total</th>
+                            <th>Eliminar</th>
+                            <th>Valor en ARS o EUR</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let product of products">
+                        <tr>
+                            <td>{{product.nombre}}</td>
+                            <td>{{product.PrecioUSD}} usd</td>
+                            <td><img style="width: 120px;" src="{{product.img}}"></td>
+                            <td>{{product.cantidad}}</td>
+                            <td>{{product.totalprice}}</td>
+                            
+                            <td><button class="btn btn-danger" (click)="delete(product)"><i class="fas fa-trash"></i></button></td>
+                         </tr>
+                    </tbody>
+                    
+                        <td colspan="4"></td>
+                        <td><button (click)="emptycart()" class="btn btn-danger">Vaciar Carrito</button></td>
+                        <td><button  routerLink="/products" class="btn btn-success">Comprar Mas</button></td>
+                        <td><strong>Total de la Compra {{total}} en USD</strong></td>
+                </table>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+</ng-container>
+
+
+<ng-container *ngIf="products.length == 0">
+    <div class="center">
+        <h3>Tu Carrito esta vacio!!</h3>
+        <h6>Podes agregar productos aquí</h6>
+        <button  routerLink="/products" class="btn btn-dark"> Comprar ahora</button>
+    </div>
+</ng-container>
+
+
+<!-- (click)="setCurrency('USD',1)" -->
+<!-- (click)="setCurrency('ARS',172)"  -->
+<!-- (click)="setCurrency('EUR'.94)" -->
+

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let product of productlist">
+            <div class="card col-md-3">  
+                <img src="{{product.img}}" alt="">
+                <h5 style="white-space:nowrap; overflow:hidden;text-overflow:ellipsis;max-width: 100ch;">{{product.nombre}}</h5>
+                <p><strong>{{product.categoria}}</strong></p>
+                <p style="font-size:15px" ><strong>Peliculas en la que aparece:</strong><br>{{product.peliculas}}</p>
+                <h3>{{product.PrecioUSD}}</h3>
+                <button class="btn btn-warning"(click)='addtoCart(product)'>Añadir al Carrito</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>
