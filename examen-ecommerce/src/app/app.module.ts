@@ -7,7 +7,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { CartComponent } from './component/cart/cart.component';
 import { ProductsComponent } from './component/products/products.component';
 import {HttpClientModule} from '@angular/common/http';
-import { CurrencypipePipe } from './pipe/currencypipe.pipe';
+import { CurrencyChangePipe } from './pipe/currency-change.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { CurrencypipePipe } from './pipe/currencypipe.pipe';
     HeaderComponent,
     CartComponent,
     ProductsComponent,
-    CurrencypipePipe
+    CurrencyChangePipe,
   ],
   imports: [
     BrowserModule,

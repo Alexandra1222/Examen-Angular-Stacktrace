@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CartService } from 'src/app/api/cart.service';
+import { ProductsService } from 'src/app/api/products.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { CartService } from 'src/app/api/cart.service';
 })
 export class HeaderComponent {
   public totalitem=0;
-  constructor(private cart:CartService){}
+  constructor(private cart:CartService,private productService:ProductsService){}
 
   ngOnInit():void{
     this.cart.getproduct().subscribe(res=>{
@@ -16,4 +17,11 @@ export class HeaderComponent {
 
     })
   }
+
+  setCurrency(symbol: string, value: number): void {
+    this.productService.setCurrency(symbol, value)
+  }
+
+
+  
 }

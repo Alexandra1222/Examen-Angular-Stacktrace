@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CartService } from 'src/app/api/cart.service';
 import { ProductsService } from 'src/app/api/products.service';
 
@@ -8,14 +8,14 @@ import { ProductsService } from 'src/app/api/products.service';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
-  public productlist:any;
-  
+  @Input()productlist:any;
+  /* public productlist:any; */
 
   constructor(private api:ProductsService, private cart:CartService){}
 
   ngOnInit():void{
     this.api.getProduct().subscribe(res=>{
-      //console.log(res);
+      console.log(res);
       this.productlist=res;
 
       this.productlist.forEach((a:any)=>{
@@ -27,11 +27,8 @@ export class ProductsComponent {
     //add to cart
     addtoCart(product:any){
       this.cart.addtoCart(product);
-      console.log(product);
-      
+      console.log(product); 
 
-
-
-  }
+    }
 
 }

@@ -6,10 +6,19 @@
                 <h5 style="white-space:nowrap; overflow:hidden;text-overflow:ellipsis;max-width: 100ch;">{{product.nombre}}</h5>
                 <p><strong>{{product.categoria}}</strong></p>
                 <p style="font-size:15px" ><strong>Peliculas en la que aparece:</strong><br>{{product.peliculas}}</p>
-                <h3>{{product.PrecioUSD}}</h3>
+                <h3>{{product.PrecioUSD | currencyChange}}</h3>
                 <button class="btn btn-warning"(click)='addtoCart(product)'>Añadir al Carrito</button>
             </div>
+
         </ng-container>
+        <div class="card col-md-3"> 
+            <img src="https://www.tradeinn.com/f/13888/138888457/star-wars-figura-obi-wan-kenobi-episode-ii-vintage-collection-9.5-cm.jpg" alt="">
+            <h5 style="white-space:nowrap; overflow:hidden;text-overflow:ellipsis;max-width: 100ch;">Obi Wan Kenobi</h5>
+            <p><strong>novedad</strong></p>
+            <p style="font-size:15px" ><strong>Peliculas en la que aparece:</strong><br>"A New Hope","The Empire Strikes Back"</p>
+            <h3>{{50 | currencyChange}}</h3>
+            <button class="btn btn-warning">Añadir al Carrito</button>
+        </div>
 
     </div>
 </div>

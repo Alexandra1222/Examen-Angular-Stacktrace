@@ -7,13 +7,24 @@
             <i style="font-size:30px;color:white;margin-left:412px;margin-top: 8px;" class=" fas fa-solid fa-teddy-bear"></i>
             <strong style="font-size: 25px;color:yellow;margin-left: 50px;">Tienda Star Wars</strong>
         </div>
+
         <button class="btn btn-warning">
             <i style="font-size:30px;" routerLink="/cart" class="fas fa-cart-plus"></i> 
             <div style="font-size:10px;" class="badge bg-success">{{totalitem}}</div>
         </button>
+    </div>
+
+    <div class="navbar-brand align-item-right d-flex" id="currency-buttons">
+        Mirá todos nuestros precios en moneda Internacional y Local
+            <ul class="list-menu">
+                <button id="buttons" (click)="setCurrency('USD',1)">USD</button>
+                <button id="buttons" (click)="setCurrency('EUR',.94)">EUR</button>
+                <button id="buttons"(click)="setCurrency('ARS',172)">ARS</button>
+    
+            </ul>
+            
         
     </div>
-  
 </header>
 
 
