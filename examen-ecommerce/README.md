@@ -18,3 +18,5 @@ Requerimientos técnicos
 https://swapi.dev/
 2. Se puede usar el patrón de diseño Chain of Responsibility (Opcional) 
 https://refactoring.guru/es/design-patterns/chain-of-responsibility
+
+![image](https://user-images.githubusercontent.com/68980933/208086423-a46cecbf-0a40-4abb-af73-e42e61ccb116.png)
